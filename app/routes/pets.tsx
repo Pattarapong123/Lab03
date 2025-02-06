@@ -11,7 +11,7 @@ function Pets() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const respData = await fetch(`http://localhost:3001/pets`);
+                const respData = await fetch(`http://localhost:3000/pets`);
                 if (!respData.ok) {
                     throw new Error("Network response was not ok");
                 }

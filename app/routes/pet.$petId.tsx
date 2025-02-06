@@ -16,7 +16,7 @@ function PetDetails() {
 
         const fetchData = async () => {
             try {
-                const respData = await fetch(`http://localhost:3001/pets/${petId}`);
+                const respData = await fetch(`http://localhost:3000/pets/${petId}`);
                 if (!respData.ok) {
                     throw new Error("Network response was not ok");
                 }
